@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list Music</title>
+    <link rel="stylesheet" href="listMusic.css">
+    <script src="https://kit.fontawesome.com/b0c183d80e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&family=Noto+Sans+Display:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="middle">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+        <div class="bar bar7"></div>
+        <div class="bar bar8"></div>
+    </div>
+
+    <nav>
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+                <li><span>Web Developer</span></li>
+                <li class="theme">
+                    <div class="haderTheme">
+                        <a>theme</a> <i class="fas fa-arrow-down-long"></i>
+                    </div>
+                    <div class="colors">
+                        <div class="color" style="background: #00b09b;background: -webkit-linear-gradient(to right, #96c93d, #00b09b);background: linear-gradient(90deg, #96c93d 0%, #00b09b 100%);"></div>
+                        <div class="color" style="background: #753a88;background: linear-gradient(90deg, #cc2b5e  0%, #753a88 100%);"></div>
+                        <div class="color" style="background: #185a9d;background: linear-gradient(90deg, #43cea2 0%,  #185a9d 100%);"></div>
+                        <div class="color" style="background: rgb(254,187,72);background: linear-gradient(90deg, rgba(254,187,72,1) 0%, rgba(250,25,111,1) 100%);"></div>
+
+                    </div>
+                </li>
+                <li><a href="" target="_blank">Company</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                <li><a href="https://www.linkedin.com" target="_blank">Linkedin</a></li>
+            </ul>
+        </div>
+        <div id="search">
+            <input type="text" name="" placeholder="search..." id="inputSearch">
+            <i class="fa-solid fa-search" onclick="styleInputSearch()"></i>
+        </div>
+    </nav>
+    <div id="backGround">
+    </div>
+
+    <div class="container">
+        <ul id="ulList">
+
+        </ul>
+
+    </div>
+
+    <div id="musicPlayer">
+
+        <h3 id="artist">sami beigi-Eshveh</h3>
+
+        <audio id="music" src="music/sami-beigi_eshveh-bi-andazeh-dari.mp3"></audio>
+
+        <div class="progress">
+            <span class="start"></span>
+            <div class="progress-bar">
+                <div class="now"></div>
+            </div>
+            <span class="end"></span>
+        </div>
+
+
+        <div class="control">
+            <i class="fa-solid fa-backward-fast"></i>
+            <i class="fa-solid fa-play" id="playOrpause"></i>
+            <i class="fa-solid fa-forward-fast"></i>
+        </div>
+    </div>
+
+
+    <script src="listMusic.js"></script>
+</body>
+
+</html>
